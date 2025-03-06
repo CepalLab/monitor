@@ -427,7 +427,7 @@ st.dataframe(
     paises_data.style.background_gradient(subset=['Impacto'], cmap='Blues')
     .format({'Impacto': '{:.1f}/10'})
     .set_properties(**{'text-align': 'left'})
-    .hide_index(),
+    .hide(axis='index'),
     height=300
 )
 
